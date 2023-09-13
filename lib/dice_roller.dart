@@ -37,6 +37,10 @@ class _DiceRollerState extends State<DiceRoller> {
                 foregroundColor: Colors.white,
                 textStyle: const TextStyle(fontSize: 28)),
             child: const Text('Roll Dice!')),
+        const SizedBox(
+          height: 50,
+          width: 20,
+        ),
         ElevatedButton(
           onPressed: () {
             SystemNavigator.pop();
