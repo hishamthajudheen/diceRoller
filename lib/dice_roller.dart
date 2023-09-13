@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'dart:math';
 
 final randomizer = Random();
@@ -35,7 +36,13 @@ class _DiceRollerState extends State<DiceRoller> {
                 padding: const EdgeInsets.only(top: 20),
                 foregroundColor: Colors.white,
                 textStyle: const TextStyle(fontSize: 28)),
-            child: const Text('Roll Dice!'))
+            child: const Text('Roll Dice!')),
+        ElevatedButton(
+          onPressed: () {
+            SystemNavigator.pop();
+          },
+          child: const Text('Exit!'),
+        )
       ],
     );
   }
